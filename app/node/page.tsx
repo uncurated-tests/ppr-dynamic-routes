@@ -1,16 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export async function generateStaticParams() {
-  return [
-    {
-      slug: "random",
-    },
-  ];
-}
-
-export default async function Page() {
-  await new Promise((resolve) => setTimeout(resolve, 200));
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
